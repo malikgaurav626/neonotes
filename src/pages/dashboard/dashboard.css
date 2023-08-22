@@ -27,6 +27,9 @@
   aspect-ratio: 1.26/1;
   margin-left: auto;
 }
+.neo-notes-logo-img:hover{
+  cursor: pointer;
+}
 .neo-notes-logo {
   display: flex;
   width: 100%;

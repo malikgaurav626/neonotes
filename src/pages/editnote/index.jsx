@@ -303,6 +303,7 @@ export default function EditNote() {
         <img
           src={colorToImageMap[currentNotee.color]}
           className="neo-notes-logo-img"
+          onClick={()=> dispatch(setRouteLocation(0))}
         ></img>
       </div>
       {!edit ? (

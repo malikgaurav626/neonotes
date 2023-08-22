@@ -322,6 +322,7 @@ export default function Dashboard() {
           <img
             src={"../../../assets/neonoteslogo.png"}
             className="neo-notes-logo-img"
+            onClick={()=> dispatch(setRouteLocation(0))}
           ></img>
         </div>
         <div className="notes-section">
