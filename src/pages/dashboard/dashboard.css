@@ -1,0 +1,514 @@
+
+.dashboard-container {
+  font-family: "causten round";
+  font-weight: 500;
+  /* letter-spacing: -0.5px; */
+  padding: 40px 100px;
+  opacity: 0;
+  animation: appear 1s linear 0s 1 forwards;
+  overflow-y: auto;
+  height: 100svh;
+  width: 100svw;
+  overflow-x: hidden;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+.dashboard-container::-webkit-scrollbar-track {
+  background-color: #27262300 !important;
+}
+.dashboard-container::-webkit-scrollbar-thumb {
+  background-color: #272623;
+}
+.neo-notes-logo-img {
+  width: 70px;
+  min-width: 70px;
+  aspect-ratio: 1.26/1;
+  margin-left: auto;
+}
+.neo-notes-logo {
+  display: flex;
+  width: 100%;
+}
+.notes-section {
+  width: 100%;
+  margin-top: 20px;
+  /* position: relative; */
+}
+.add-note {
+  font-family: "causten round";
+  font-size: 40px;
+  height: 230px;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  transition: 1s;
+  border: 1px solid #272623;
+  border-radius: 3px;
+}
+.add-note::before,
+.add-note::after {
+  position: absolute;
+  background: #e8e4d5;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+}
+
+.add-note::before {
+  width: 195px;
+  height: 230px;
+}
+
+.add-note::after {
+  width: 335px;
+  height: 195px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.add-note:hover::before {
+  width: 0px;
+  background: #e8e4d5;
+}
+
+.add-note:hover::after {
+  height: 0px;
+  background: #e8e4d5;
+}
+
+.add-note:hover {
+  background: #e8e4d5;
+}
+
+.add-symbol {
+  font-size: 100px;
+}
+.expand-note-circle{
+  width: 0px;
+  height: 0px;
+  /* background-color: #cf491c; */
+  background-color: #e8e4d5;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.note {
+  z-index: 102;
+  /* border-radius: 3px; */
+  cursor: pointer;
+  border-left: 3px solid #e8e4d5;
+  transition: 0.3s ease;
+  height: 230px;
+  animation: appear 0.4s linear 0s 1 forwards;
+  opacity: 0;
+  margin: 0;
+
+}
+.note:hover {
+  border-left: 3px solid #272623;
+  transition: 0.3s ease;
+}
+.note-title {
+  font-family: "EuropaGroteskSH-BolCon";
+}
+.note-tagline {
+  font-family: "causten round";
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+.note-body{
+  font-family: "causten round";
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.noselect-d {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.page-menu{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    margin: 5px;
+    margin-right: 0px;
+    width: 60px;
+    height: 100svh;
+    background-color: #272623;
+    /* background: linear-gradient(to bottom, #272623, #272623,#272623c8, #767369, #e8e4d5); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.page-menu::-webkit-scrollbar{
+    width: 0.0001px;
+}
+.page-add-btn{
+    color: #e8e4d5;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'causten round';
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #e8e4d5;
+    margin: 3px;
+    margin-top: 10px;
+}
+.page-add-btn:hover{
+    color: #272623;
+    background-color: #e8e4d5;
+}
+
+.page-number{
+    margin-top: 3px;
+    font-size: 12px;
+    position: relative;
+}
+
+.page-active{
+    background-color: #e8e4d5;
+    color: #272623;
+    border: 1px solid #e8e4d5;
+}
+.add-note{
+  margin: 0;
+  margin-top: 9px;
+  scale: 0.98;
+  
+}
+.note-body{
+  overflow: hidden;
+  height: 130px;
+}
+.page-number:hover .page-menu-badge{
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.page-menu-badge{
+  opacity: 0;
+  transition: 0.3s ease;
+  color: #272623;
+  font-family: 'causten round';
+  background-color: #e8e4d5;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  border: 1px solid #272623;
+  border-radius: 50%;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1;
+}
+.page-menu-badge:hover{
+  color: #e8e4d5;
+  background-color: #272623;
+  border: 1px solid #e8e4d5;
+}
+.page-name{
+  font-family: 'EuropaGroteskSH-BolCon';
+  font-size: 50px;
+}
+.page-name:hover .page-edit-btn{
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.warning{
+  color: red;
+  margin-top: 25px;
+}
+.note-delete-btn-img{
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+.note-pin-btn-img{
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+.note:hover .note-delete-btn-img{
+  opacity: 1;
+  transition: 0.3s ease;
+  pointer-events: all;
+}
+.note-delete-btn-img:hover{
+  scale: 1.1;
+}
+.note:hover .note-pin-btn-img{
+  opacity: 1;
+  transition: 0.3s ease;
+  pointer-events: all;
+}
+.note-pin-btn-img:hover{
+  scale: 1.1;
+}
+.pin-img{
+  color: #e8e4d5;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'causten round';
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #e8e4d5;
+    margin: 3px;
+    margin-top: 10px;
+}
+.pin-img:hover{
+  background-color: #272623 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 998px) {
+  .warning{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .note{
+    height: 215px;
+  }
+  
+}
+@media (max-width: 998px) {
+  .dashboard-container {
+    padding: 20px 80px;
+  }
+  .neo-notes-logo-img {
+    width: 65px;
+    min-width: 65px;
+    aspect-ratio: 1.26/1;
+    z-index: 109;
+  }
+  .add-symbol {
+    font-size: 145px;
+  }
+  .page-menu{
+    height: 140.6svh;
+  }
+  .add-note::before {
+    width: 195px;
+    height: 240px;
+  }
+  
+  .add-note::after {
+    width: 335px;
+    height: 195px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px 60px;
+  }
+  .neo-notes-logo-img {
+    width: 60px;
+    min-width: 60px;
+    aspect-ratio: 1.26/1;
+    margin-right: 9px;
+  }
+  .add-symbol {
+    font-size: 150px;
+  }
+  .page-menu{
+    /* left: -50px; */
+    width: 100svw !important;
+    flex-direction: row !important;
+    height: 70px !important;
+    position: fixed !important;
+    top: calc(100% - 70px) !important;
+    right: 0 !important;
+    margin: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    z-index: 103;
+  }
+  .page-add-btn{
+    margin-top: 0;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .pin-img{
+    margin-top: 0;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .add-note::before {
+    width: 195px;
+    height: 240px;
+  }
+  
+  .add-note::after {
+    width: 320px;
+    height: 195px;
+  }
+}
+@media (max-width: 576px) {
+  .dashboard-container {
+    padding: 20px 40px;
+  }
+  .neo-notes-logo-img {
+    width: 55px;
+    margin-right: 0px;
+    min-width: 55px;
+    aspect-ratio: 1.26/1;
+  }
+  .add-symbol {
+    font-size: 155px;
+  }
+  .add-note::before {
+    width: 195px;
+    height: 240px;
+  }
+  
+  .add-note::after {
+    width: 470px;
+    height: 195px;
+  }
+  .expand-note-circle{
+    width: 0px;
+    height: 110svh;
+    /* background-color: #cf491c; */
+    background-color: #e8e4d5;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    /* border-radius: 50%; */
+    border-radius: 0px !important;
+  }
+  .notes-section{
+    position: static !important;
+  }
+  .page-title-edit-input{
+    max-width: 250px;
+    max-height: 80px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .dashboard-container {
+    padding: 20px 20px;
+  }
+  .neo-notes-logo-img {
+    width: 45px;
+    min-width: 45px;
+    aspect-ratio: 1.26/1;
+  }
+  .add-symbol {
+    font-size: 160px;
+  }
+}
+
+
+
+
+
+
+
+@keyframes shake-error {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes circleExpand-animate {
+  99%{
+    border-radius: 50%;
+  }
+  100%{
+    width: 150svw;
+    height: 190svh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px;
+  }
+}
+
+@keyframes circleExpand-animate-mobile {
+  100%{
+    width: 400svw;
+    height: 400svh;
+    /* transform: translate(-50%, -50%); */
+    top: 50svh;
+    left: 50svw;
+    border-radius: 0px;
+  }
+}
+
+@keyframes fadeAway {
+  100%{
+    opacity: 0;
+  }
+}

@@ -1,0 +1,241 @@
+.plus{
+    font-size: 110px;
+    font-family: 'Causten round';
+    color: #272623;
+    animation: plus-rotate 0.9s linear 1 0s forwards;
+    transform: rotateZ(-90deg);
+}
+.main-heading-container{
+    height: 100svw;
+    background-image: url('../../assets/backdropv2.jpg');
+    background-size: contain;
+}
+.main-heading{
+    font-family: 'EuropaGroteskSH-DemBol';
+    font-size: 22svw;
+    line-height: 212px;
+    /* text-align: center; */
+    color: rgb(0, 0, 0);
+    background-color: #e8e4d5;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px;
+    mix-blend-mode:lighten;
+    opacity: 0;
+    animation: appear 0.5s linear 0s 1 forwards;
+}
+
+.homebutton {
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    /* border-radius: 1px; */
+    border: 1px solid #272623;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    transition: 1s;
+  }
+  
+  .homebutton::before, .homebutton::after {
+    position: absolute;
+    background: #e8e4d5;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+  }
+  
+  .homebutton::before {
+    height: 50px;
+    width: 130px;
+  }
+  
+  .homebutton::after {
+    width: 150px;
+    height: 30px;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+              color: #272623;
+              font-family: 'causten round';
+  }
+  
+  .homebutton:hover::before {
+    width: 0px;
+    background: transparent;
+  }
+  
+  .homebutton:hover::after {
+    height: 0px;
+    background: transparent;
+  }
+  
+  .homebutton:hover {
+    background: transparent;
+  }
+  .homepage-button-container{
+    margin-top: 130px;
+    opacity: 0;
+    animation: appear 0.5s linear 0s 1 forwards;
+  }
+
+  .homebutton:focus{
+    outline: none;
+  }
+
+  .sub-heading{
+    font-size: 20px;
+    color: #272623;
+    transform: translateY(-10px);
+    animation: transformdown 0.5s linear 0s 1 forwards;
+  }
+  .pre-sub-heading{
+    font-family: 'Causten Round';
+    font-size: 1.8svw;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-top: 30px;
+  }
+  .causten-bolder{
+    font-weight: bolder;
+  }
+  .backdrop-circle{
+    position: absolute;
+    background-color: #e8e4d5;
+    border-radius: 50%;
+    z-index: 101;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 998px) {
+    .main-heading{   
+        line-height: 144px;
+    }
+}
+@media (max-width: 768px) {
+    .main-heading{
+        font-size: 150px;
+        text-align: left;
+        line-height: 97px;
+    }
+    .main-heading-container{
+        background-size: cover;
+    }
+}
+@media (max-width: 652px) {
+    .main-heading{
+        font-size: 150px;
+        text-align: left;
+        line-height: 120px;
+    }
+    .homepage-button-container{
+        margin-top: 70px;
+      }
+
+}
+
+@media (max-width: 576px) {
+    .main-heading{
+        font-size: 100px;
+        text-align: left;
+        line-height: 65px;
+    }
+    .main-heading-container{
+        height: 130svw;
+        background-size: cover;
+    }
+    .homepage-button-container{
+        margin-top: 130px;
+    }
+    .plus{
+        font-size: 80px;
+    }
+    .pre-sub-heading{
+        font-size: 3svw;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 435px) {
+    .main-heading{
+        font-size: 100px;
+        text-align: left;
+        line-height: 80px;
+    }
+}
+
+
+
+
+
+
+@keyframes appear{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes plus-rotate {
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes flip {
+    100%{
+        transform: rotateX(60deg);
+    }
+}
+@keyframes transformdown {
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes expandbackdropcircle-animate {
+  1%{
+    opacity: 1;
+  }/*
+  10%{
+    border-radius: 40%;
+  }
+  20%{
+    border-radius: 30%;
+  }
+  40%{
+    border-radius: 20%;
+  }
+  60%{
+    border-radius: 10%;
+  } */
+  99%{
+    border-radius: 49%;
+  }
+  100%{
+    transform: translateY(-120svw);
+    border-radius: 0px;
+    width: 270svw;
+    height: 270svh;
+    opacity: 1;
+  }
+}

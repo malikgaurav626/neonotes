@@ -1,0 +1,223 @@
+/* EuropaGroteskSH-MedIta */
+@font-face {
+  font-family: 'EuropaGroteskSH-MedIta';
+  src: url('../fonts/EuropaGroteskSH-MedIta.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* EuropaGroteskSH-Bol */
+@font-face {
+  font-family: 'EuropaGroteskSH-Bol';
+  src: url('../fonts/EuropaGroteskSH-Bol.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* EuropaGroteskSH-Reg */
+@font-face {
+  font-family: 'EuropaGroteskSH-Reg';
+  src: url('../fonts/EuropaGroteskSH-Reg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* EuropaGroteskSH-XLig */
+@font-face {
+  font-family: 'EuropaGroteskSH-XLig';
+  src: url('../fonts/EuropaGroteskSH-XLig.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* EuropaGroteskSH-MedCon */
+@font-face {
+  font-family: 'EuropaGroteskSH-MedCon';
+  src: url('../fonts/EuropaGroteskSH-MedCon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* EuropaGroteskSH-Med */
+@font-face {
+  font-family: 'EuropaGroteskSH-Med';
+  src: url('../fonts/EuropaGroteskSH-Med.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* EuropaGroteskSH-DemBol */
+@font-face {
+  font-family: 'EuropaGroteskSH-DemBol';
+  src: url('../fonts/EuropaGroteskSH-DemBol.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* EuropaGroteskSH-BolCon */
+@font-face {
+  font-family: 'EuropaGroteskSH-BolCon';
+  src: url('../fonts/EuropaGroteskSH-BolCon.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quantify;
+  src: url('../fonts/Quantify.ttf');
+}
+@font-face {
+  font-family: OBit;
+  src: url('../fonts/Obit.ttf');
+}
+/* Import Causten Round Thin Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-ThinOblique.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Import Causten Round SemiBold Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-SemiBoldOblique.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Import Causten Round Regular Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-RegularOblique.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Import Causten Round Medium Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-MediumOblique.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Import Causten Round Light Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-LightOblique.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Import Causten Round ExtraLight Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-ExtraLightOblique.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Import Causten Round ExtraBold Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-ExtraBoldOblique.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Import Causten Round Black Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-BlackOblique.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Import Causten Round Bold Oblique */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-BoldOblique.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Import Causten Round Black */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Import Causten Round Bold */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Import Causten Round Thin */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Import Causten Round SemiBold */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Import Causten Round Regular */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Import Causten Round Medium */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Import Causten Round Light */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Import Causten Round ExtraLight */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Import Causten Round ExtraBold */
+@font-face {
+  font-family: 'Causten Round';
+  src: url('../fonts/CaustenRound-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+body{
+  background-color: #e8e4d5;
+  width: 100svw;
+  height: 100svh;
+  color: #272623;
+  overflow: hidden;
+}
