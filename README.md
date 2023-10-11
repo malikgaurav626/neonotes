@@ -1,6 +1,6 @@
 # NeoNotes
 
-NeoNotes is a captivating note-taking application that combines a mesmerizing 70s-style vaporwave aesthetic with modern functionality. This unique design choice not only emphasizes originality but also offers users a visually appealing and enjoyable experience.
+NeoNotes is a captivating note-taking application that combines a mesmerizing 70s-style vaporwave aesthetic with modern functionality. This unique design choice not only emphasizes originality but also offers users a visually appealing and enjoyable experience. Demo -->> [Neo Notes](https://neonotes-local.netlify.app/)
 
 ![Logo](https://i.ibb.co/D5FY0W0/android-chrome-192x192.png")
 
